@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener
 {
     public function onEnable()
     {
-        $this->getlogger()->info("JoinLeave by GeistFan");
+        $this->getlogger()->info("JoinLeave by GeistFan and GodWeedZao");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     public function onPlayerJoin(PlayerJoinEvent $event)
