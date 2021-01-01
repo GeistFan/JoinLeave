@@ -3,6 +3,8 @@
 namespace JoinLeave;
 
 use pocketmine\event\Listener;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
 use pocketmine\Player;
 use pocketmine\event;
 use pocketmine\event\player\PlayerJoinEvent;
@@ -26,6 +28,17 @@ class Main extends PluginBase implements Listener
     {
         $player = $event->getPlayer();
         $event->setQuitMessage("");
+    }
+
+    public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args, Player $player):bool
+    {
+        if($cmd->getName() === "tjl")
+        {
+            if($sender->hasPermission("JoinLeaveTest.cmd"))
+            {
+                $sender->sendMessage("JoinLeave ist Aktiv!");
+            }
+        }
     }
 
 }
