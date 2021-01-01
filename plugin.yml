@@ -1,5 +1,14 @@
 name: JoinLeave
-version: 1.0.0
+version: 1.1.0
 main: JoinLeave\Main
-api: 3.0.0, 4.0.0
+api: [3.0.0, 4.0.0]
 author: GeistFan\GodWeedZao
+command:
+  tjl:
+    description: Testet ob JoinLeave aktiv ist.
+    permission: JoinLeaveTest.cmd
+
+permissons:
+  JoinLeaveTest.cmd:
+    default: op
+    description: Darf /tjl benutzen.
