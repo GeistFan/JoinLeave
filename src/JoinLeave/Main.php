@@ -38,7 +38,7 @@ class Main extends PluginBase implements Listener
             {
                 $sender->sendMessage("JoinLeave ist Aktiv!");
             }
-        }
+        }return true;
     }
 
 }
