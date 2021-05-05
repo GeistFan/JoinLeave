@@ -12,10 +12,8 @@ use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
-class Main extends PluginBase implements Listene
+class Main extends PluginBase implements Listener
 {
-    public $cfg;
-
     public function onEnable()
     {
         $this->getlogger()->info("JoinLeave by GeistFan");
