@@ -1,0 +1,4 @@
+#JoinLeave
+#To use players name use {name}
+join: ""
+leave: ""
