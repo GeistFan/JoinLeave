@@ -34,7 +34,7 @@ class Main extends PluginBase implements Listener
     {
         $leave = $this->getConfig()->get("leave");
         $player = $event->getPlayer()->getName();
-        $event->setQuitMessage(str_replace("{name",$player,$leave)));
+        $event->setQuitMessage(str_replace("{name}",$player,$leave));
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool
