@@ -1,5 +1,5 @@
 name: JoinLeave
-version: 1.2.0
+version: 1.2.1
 main: JoinLeave\Main
 api: [3.0.0, 4.0.0]
 author: GeistFan

@@ -14,7 +14,7 @@ use pocketmine\utils\Config;
 
 class Main extends PluginBase implements Listener
 {
-    public function onEnable()
+    public function onEnable(): void
     {
         $this->getlogger()->info("JoinLeave by GeistFan");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
